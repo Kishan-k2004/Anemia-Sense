@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anemia Sense - Prediction App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='dist/output.css') }}">
+</head>
+<body class="text-gray-600 body-font bg-white dark:bg-slate-900">
+<section>
+    <div class="container mx-auto flex md:px-24 md:py-10 md:flex-row flex-col items-center justify-center h-screen">
+        
+        <!-- Text Section -->
+        <div
+            class="lg:flex-grow mt-5 md:mt-0 md:w-1.5/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+            
+            <h1
+                class="text-2xl font-extrabold leading-9 tracking-tight mb-3 text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-5xl md:leading-normal">
+                Anemia Sense <br class="hidden md:block">
+                <span class="text-emerald-600">Leveraging Machine Learning</span>
+                <br>For Precise Anemia Recognition
+            </h1>
+            
+            <p class="mb-8 md:pl-0 pl-2 pr-2 leading-relaxed dark:text-gray-300">
+                Anemia Sense is a smart health-tech solution that uses advanced machine learning models 
+                to detect anemia with high precision. Our goal is to support early diagnosis and 
+                empower healthcare decisions by making predictions simple, fast, and accessible.
+            </p>
+            
+            <div class="flex justify-center gap-4">
+                <a href="/predict"
+                    class="inline-flex text-white bg-emerald-600 border-0 py-2 px-6 focus:outline-none hover:bg-emerald-700 rounded text-lg shadow-md transition">
+                    Start Prediction
+                </a>
+            </div>
+        </div>
+        
+        <!-- Image Section -->
+        <div class="lg:max-w-lg lg:w-full mb-5 md:mb-0 md:w-1/2 w-3/6">
+            <img class="object-cover object-center rounded-lg shadow-lg" 
+                 alt="Anemia Detection" 
+                 src="../static/assets/anemia.png">
+        </div>
+    </div>
+</section>
+</body>
+</html>
